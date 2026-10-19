@@ -1,0 +1,9 @@
+{
+  "voice": "../voices/narrator.wav",
+  "defaults": { "exaggeration": 0.4, "cfg_weight": 0.5 },
+  "lines": [
+    { "id": "l01", "text": "Dev took a shrinking pill. Every five seconds he gets ten times smaller, and it won't stop." },
+    { "id": "l02", "text": "Arreh? Uh-oh.", "exaggeration": 1.0, "cfg_weight": 0.3 },
+    { "id": "l03", "text": "Dev is fine. Dev is always fine." }
+  ]
+}

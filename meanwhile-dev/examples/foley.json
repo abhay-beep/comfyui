@@ -1,0 +1,8 @@
+{
+  "negative": "speech, talking, voice, music",
+  "cues": [
+    { "id": "cat-swipe", "start": 12.8, "end": 15.2, "prompt": "a cat hissing and swiping its paw" },
+    { "id": "carpet",    "start": 16.0, "end": 23.0, "prompt": "rustling dense fibres, tiny scurrying footsteps" },
+    { "id": "atom-hum",  "start": 47.5, "end": 51.5, "prompt": "deep soft electric hum", "video": false }
+  ]
+}
