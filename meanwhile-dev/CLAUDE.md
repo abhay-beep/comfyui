@@ -13,7 +13,7 @@ Setup notes and examples: `tools/ADDONS.md`.
 - `timing.py` must read line lengths from `assets/voice/lines.json`, never hard-coded durations.
 
 ## Sound effects: MMAudio (`tools/foley.py`)
-- After the first rough render, list cues of 8 s or less in `videos/<ep>/foley.json` for moments
+- When I ask for it: after the first rough render, list cues of 8 s or less in `videos/<ep>/foley.json` for moments
   with on-screen motion (impacts, animals, textures). Run
   `python3 tools/foley.py foley.json --video <rough render>`.
 - Keep `sfx.py` for exact beat hits; mix the foley files in from `assets/sfx/foley.json` (start times).
