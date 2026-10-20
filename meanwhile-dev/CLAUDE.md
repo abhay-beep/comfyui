@@ -1,6 +1,6 @@
 # meanwhile.dev: production tools
 
-Every new episode uses these three tools by default. They live in `tools/` and `assets/` at the
+Every new episode uses Chatterbox and post.js by default; MMAudio only on request. They live in `tools/` and `assets/` at the
 project root; copy them into each new `videos/<ep>/` folder when you set it up.
 Setup notes and examples: `tools/ADDONS.md`.
 
@@ -18,8 +18,9 @@ Setup notes and examples: `tools/ADDONS.md`.
   `python3 tools/foley.py foley.json --video <rough render>`.
 - Keep `sfx.py` for exact beat hits; mix the foley files in from `assets/sfx/foley.json` (start times).
 - Narration stays at least 17 dB above effects. Measure it before rendering.
-- Licence switch: MMAudio's weights are non-commercial. **MMAudio: ON.** If I say the page is
-  monetised, set this to OFF and use only `sfx.py`.
+- **MMAudio: OFF.** It is slow and RAM-heavy on this Mac, and its weights are non-commercial.
+  Only use `tools/foley.py` when I ask for it on a specific moment, and then with
+  `--variant small_44k` on a single cue of 5 s or less.
 
 ## Lens effects: pmndrs/postprocessing (`assets/post.js`)
 - Add `"postprocessing": "https://cdn.jsdelivr.net/npm/postprocessing@6.35.5/build/index.js"`

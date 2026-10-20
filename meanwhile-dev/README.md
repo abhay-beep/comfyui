@@ -38,7 +38,12 @@ python3 tools/narrate.py narration.json          # writes assets/voice/<id>.wav 
 
 - Chatterbox adds an inaudible watermark ("Perth") to everything it generates. It doesn't affect the sound.
 
-## 2. Sound effects: MMAudio
+## 2. Sound effects: MMAudio (optional, off by default)
+
+> **Heavy on a Mac.** MMAudio is built for NVIDIA GPUs; on Apple silicon it runs on MPS, slowly, and
+> the default `large_44k_v2` model needs ~6 GB of memory, which comes out of system RAM on a Mac.
+> Use it only for a single hero moment, with `--variant small_44k` and a cue of 5 s or less.
+> To uninstall: `rm -rf ~/MMAudio` (the code, its venv and the downloaded weights all live there).
 
 MMAudio watches a stretch of the video and generates audio synced to what moves on screen:
 the cat's swipe, the carpet fibres, the sneeze. It complements `sfx.py`, it doesn't replace it.
